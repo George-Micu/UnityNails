@@ -19,6 +19,10 @@ nav a {
     padding-inline: 10px;
     text-decoration: none; color:#000;
 }
+nav a:hover {
+    color: #ca77b4;
+}
+
 .sr-only {
 position: absolute; 
   width: 1px;
@@ -34,6 +38,8 @@ position: absolute;
 .primary-header {
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid black;
+
 }
 
 .mobile-nav-toggle {
@@ -98,3 +104,4 @@ position: absolute;
             padding-inline: clamp(3rem, 10vw, 10rem);
         }
     }
+    
