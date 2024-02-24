@@ -1,6 +1,26 @@
 body {
-    overflow: hidden;
-    background-color: #fff6eb;
+    list-style: none;
+    background-image: url("images/new-bg.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.booking-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+
+  background: #cd71e4;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 
@@ -14,13 +34,13 @@ body {
     max-height: 100px;
 }
 nav a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-family: monospace;
+    font-size: 30px;
     padding-inline: 10px;
     text-decoration: none; color:#000;
 }
 nav a:hover {
-    color: #ca77b4;
+    color: white;
 }
 
 .sr-only {
@@ -105,3 +125,77 @@ position: absolute;
         }
     }
     
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 600px;
+        padding: 2rem;
+        margin-left: 30px;
+        margin-right: 30px;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        gap: 10px;
+    }
+    
+    .container img {
+        width: 500px;
+        height: 500px;
+        border-radius: 2%;
+    }
+
+    .nails-white {
+        position: absolute;
+        z-index: 3;
+        top: 150px;
+    }
+
+    .nails-black {
+        position: absolute;
+       right: 450px; 
+       z-index: 2;
+    }
+
+    .hero-text {
+        width: 80%;
+        position:fixed;
+        top: 200px;
+        left: 100px;
+        width: 500px; /* Set width */
+        height: 300px; /* Set height */
+
+    }
+    .hero-text h1 {
+        font-size: 3.3rem;
+        margin-bottom: 8px;
+    }
+    .hero-text p {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .hero-btn {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 2.1em 1.1em;
+  border-radius: 6px;
+  border: none;
+  margin: 8px;
+  font-weight: 800;
+  font-size: 0.85rem;
+
+  background: #cd71e4;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+    }
+
+    .hero-btn:hover {
+        background-color: transparent;
+        border: 3px solid #cd71e4;
+        color: black;
+        cursor: pointer;
+    }
